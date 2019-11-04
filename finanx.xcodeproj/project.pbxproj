@@ -16,7 +16,8 @@
 		19354CDA236EBAD10017991F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19354CCB236EB2550017991F /* LaunchScreen.storyboard */; };
 		19354CDC236EBAD10017991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19354CC6236EB2520017991F /* Main.storyboard */; };
 		19354CE4236EBBAA0017991F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19354CE3236EBBAA0017991F /* MapKit.framework */; };
-		19354CF1236FAEF60017991F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19354CF0236FAEF60017991F /* Assets.xcassets */; };
+		19742008236FB2DC00FF41BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19742007236FB2DC00FF41BD /* Assets.xcassets */; };
+		19742009236FB2DC00FF41BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19742007236FB2DC00FF41BD /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +30,7 @@
 		19354CE0236EBAD10017991F /* Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Production.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19354CE1236EBAD10017991F /* production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = production.plist; path = /Users/Rafaell416/Documents/CODE/IOS/finanx/production.plist; sourceTree = "<absolute>"; };
 		19354CE3236EBBAA0017991F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		19354CF0236FAEF60017991F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		19742007236FB2DC00FF41BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +119,7 @@
 		19354CE8236F679B0017991F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				19354CF0236FAEF60017991F /* Assets.xcassets */,
+				19742007236FB2DC00FF41BD /* Assets.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -261,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19354CCD236EB2550017991F /* LaunchScreen.storyboard in Resources */,
-				19354CF1236FAEF60017991F /* Assets.xcassets in Resources */,
+				19742008236FB2DC00FF41BD /* Assets.xcassets in Resources */,
 				19354CC8236EB2520017991F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19354CDA236EBAD10017991F /* LaunchScreen.storyboard in Resources */,
+				19742009236FB2DC00FF41BD /* Assets.xcassets in Resources */,
 				19354CDC236EBAD10017991F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
