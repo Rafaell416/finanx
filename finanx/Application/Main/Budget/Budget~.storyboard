@@ -1,17 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Til-Zf-sHZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TzR-FZ-WnL">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="xcM-F9-j06">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TzR-FZ-WnL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TBz-gK-WYC">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8fL-Ix-CkL" kind="relationship" relationship="viewControllers" id="2nv-oP-qTi"/>
+                        <segue destination="Til-Zf-sHZ" kind="relationship" relationship="viewControllers" id="p6k-ut-0D8"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lcF-08-xG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1306" y="42"/>
+        </scene>
         <!--Budget-->
         <scene sceneID="Lwb-eC-LuH">
             <objects>
                 <viewController id="lhX-qd-BzQ" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oCS-JN-PrL">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Qti-D6-U1v"/>
@@ -21,6 +44,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aP1-II-uC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="584.05797101449275" y="151.33928571428569"/>
+        </scene>
+        <!--Transactions-->
+        <scene sceneID="g5V-YC-ko6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Transactions" id="8fL-Ix-CkL" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="GO8-rZ-GU0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOc-eH-G31" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-537" y="-234"/>
         </scene>
         <!--Item-->
         <scene sceneID="vwz-ff-fRf">

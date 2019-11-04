@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +25,7 @@
                         <segue destination="95t-ng-HK8" kind="relationship" relationship="viewControllers" id="p6k-ut-0D8"/>
                         <segue destination="3pV-u4-HHb" kind="relationship" relationship="viewControllers" id="MEU-bC-eBm"/>
                         <segue destination="dx2-b7-NXf" kind="relationship" relationship="viewControllers" id="QHx-06-wLo"/>
-                        <segue destination="WQq-3E-Sel" kind="relationship" relationship="viewControllers" id="cmJ-Kw-jRn"/>
+                        <segue destination="vTp-JN-SwM" kind="relationship" relationship="viewControllers" id="cmJ-Kw-jRn"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lcF-08-xG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,14 +73,39 @@
             <point key="canvasLocation" x="-567" y="122"/>
         </scene>
         <!--Profile-->
-        <scene sceneID="Hvq-3g-Fmf">
+        <scene sceneID="zOS-Ch-5OS">
             <objects>
-                <viewControllerPlaceholder storyboardName="Profile" id="WQq-3E-Sel" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ep3-tx-ogl"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IaV-4u-6jX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="yiU-TO-6KM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QBc-wW-bTA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SAe-Wl-BLI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="ALu-9c-CQQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UA0-ed-tlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-567" y="226"/>
+            <point key="canvasLocation" x="1059.4202898550725" y="229.6875"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="KCD-Ul-kFR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vTp-JN-SwM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6Mb-eo-Ljc"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="Trx-UA-ZSU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yiU-TO-6KM" kind="relationship" relationship="rootViewController" id="34P-Cz-Hwh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCy-pO-VtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="149.27536231884059" y="229.6875"/>
         </scene>
     </scenes>
 </document>
