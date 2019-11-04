@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="GoO-WS-OSe">
-                                <rect key="frame" x="55" y="376.5" width="304" height="143"/>
+                                <rect key="frame" x="55" y="376.66666666666669" width="304" height="143.00000000000006"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="304" id="FmH-a2-SBJ"/>
-                                    <constraint firstAttribute="height" constant="143" id="WBN-6f-dvz"/>
+                                    <constraint firstAttribute="width" secondItem="GoO-WS-OSe" secondAttribute="height" multiplier="304:143" id="0bH-9Y-02j"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="304" id="FmH-a2-SBJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
