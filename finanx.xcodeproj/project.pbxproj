@@ -12,6 +12,7 @@
 		19006D3E236FDE9B00CEC6E1 /* Add.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19006D3D236FDE9B00CEC6E1 /* Add.storyboard */; };
 		19006D42236FDF4C00CEC6E1 /* Statics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19006D41236FDF4C00CEC6E1 /* Statics.storyboard */; };
 		19006D44236FDFA300CEC6E1 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19006D43236FDFA300CEC6E1 /* Profile.storyboard */; };
+		19006D4823708BD600CEC6E1 /* Signin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19006D4723708BD600CEC6E1 /* Signin.storyboard */; };
 		19354CC3236EB2520017991F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19354CC2236EB2520017991F /* AppDelegate.swift */; };
 		19354CC5236EB2520017991F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19354CC4236EB2520017991F /* ViewController.swift */; };
 		19354CC8236EB2520017991F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19354CC6236EB2520017991F /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		19006D3D236FDE9B00CEC6E1 /* Add.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Add.storyboard; sourceTree = "<group>"; };
 		19006D41236FDF4C00CEC6E1 /* Statics.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statics.storyboard; sourceTree = "<group>"; };
 		19006D43236FDFA300CEC6E1 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		19006D4723708BD600CEC6E1 /* Signin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signin.storyboard; sourceTree = "<group>"; };
 		19354CBF236EB2520017991F /* finanx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finanx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19354CC2236EB2520017991F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19354CC4236EB2520017991F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 		19354CEC236F67EA0017991F /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
+				19006D4723708BD600CEC6E1 /* Signin.storyboard */,
 			);
 			path = "Sign In";
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				19354CCD236EB2550017991F /* LaunchScreen.storyboard in Resources */,
 				19742008236FB2DC00FF41BD /* Assets.xcassets in Resources */,
 				19354CC8236EB2520017991F /* Main.storyboard in Resources */,
+				19006D4823708BD600CEC6E1 /* Signin.storyboard in Resources */,
 				19006D3E236FDE9B00CEC6E1 /* Add.storyboard in Resources */,
 				19006D3A236FDDC900CEC6E1 /* Transactions.storyboard in Resources */,
 			);
