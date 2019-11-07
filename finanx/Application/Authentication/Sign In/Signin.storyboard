@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jYG-wq-oDE">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,7 +31,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzH-VR-jnv" userLabel="OuterView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="GreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="6RS-um-yGX"/>
                                         </constraints>
@@ -61,12 +62,17 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNp-db-Qc1" userLabel="Facebook">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="56"/>
-                                        <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="FacebookColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="TXc-LS-2u2"/>
                                             <constraint firstAttribute="height" constant="56" id="h91-5I-qXv"/>
                                         </constraints>
                                         <state key="normal" image="facebook"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ki-MV-0gf" userLabel="Google">
                                         <rect key="frame" x="96" y="0.0" width="80" height="56"/>
@@ -76,44 +82,54 @@
                                             <constraint firstAttribute="height" constant="56" id="efB-Lx-jJt"/>
                                         </constraints>
                                         <state key="normal" image="google"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fa3-vX-02q" userLabel="Twitter">
                                         <rect key="frame" x="192" y="0.0" width="80" height="56"/>
-                                        <color key="backgroundColor" red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="TwitterColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="80" id="EPX-5M-Ofc"/>
                                             <constraint firstAttribute="height" constant="56" id="URA-H5-Tb2"/>
                                         </constraints>
                                         <state key="normal" image="twitter"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up with" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROi-xD-szw">
                                 <rect key="frame" x="161" y="628" width="92.5" height="22"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
-                                <color key="textColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" name="GreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NT7-wP-z55">
                                 <rect key="frame" x="0.0" y="310" width="414" height="250"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-wf-q6x" userLabel="Email Field">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OhZ-wf-q6x" userLabel="Email Field">
                                         <rect key="frame" x="20" y="20" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="RWN-m0-fMm"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h6g-Vm-utQ" userLabel="Password Field">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="h6g-Vm-utQ" userLabel="Password Field">
                                         <rect key="frame" x="20" y="80" width="374" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Lmi-rj-VTV"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59n-XP-okC" userLabel="Forgot Password">
                                         <rect key="frame" x="279" y="130" width="115" height="30"/>
@@ -121,7 +137,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1l-me-RrF" userLabel="Login">
                                         <rect key="frame" x="20" y="185" width="374" height="45"/>
-                                        <color key="backgroundColor" red="0.62352941179999999" green="0.74117647060000003" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="GreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="0af-Qq-cTd"/>
                                         </constraints>
@@ -129,6 +145,21 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="24"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                <size key="value" width="0.0" height="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                <real key="value" value="0.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                <color key="value" name="GreenShadow"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,5 +208,17 @@
         <image name="facebook" width="10" height="18"/>
         <image name="google" width="17" height="18"/>
         <image name="twitter" width="19" height="16"/>
+        <namedColor name="FacebookColor">
+            <color red="0.23137254901960785" green="0.34901960784313724" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenShadow">
+            <color red="0.31764705882352939" green="0.39215686274509803" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TwitterColor">
+            <color red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
