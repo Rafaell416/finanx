@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hTm-gS-F2H">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,18 +14,131 @@
         <!--Transactions-->
         <scene sceneID="Fhj-3d-1gR">
             <objects>
-                <viewController id="7Ql-kF-QnA" sceneMemberID="viewController">
+                <viewController id="7Ql-kF-QnA" customClass="TransactionsViewController" customModule="finanx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WdH-z8-Mb4">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0cD-y8-KZD">
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="vTG-aB-SHB">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vTG-aB-SHB" id="pdx-QK-ojo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pandora" translatesAutoresizingMaskIntoConstraints="NO" id="yV7-1c-c60">
+                                                    <rect key="frame" x="16" y="28" width="44" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="GUh-mg-wVb"/>
+                                                        <constraint firstAttribute="height" constant="44" id="X2z-td-mzD"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                                            <size key="value" width="0.0" height="2"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                                            <real key="value" value="0.5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderUIColor">
+                                                            <color key="value" name="Gray"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pandora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okk-Ad-XwS">
+                                                    <rect key="frame" x="76" y="28" width="61" height="22"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                    <color key="textColor" name="TextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="VSX-kf-0wD">
+                                                    <rect key="frame" x="342" y="28" width="52" height="58"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$12.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuy-lF-nPv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="52" height="22"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                                            <color key="textColor" name="TextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon.13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AI4-zK-bjr">
+                                                            <rect key="frame" x="5.5" y="22" width="46.5" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                            <color key="textColor" name="Gray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:45 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdd-Nf-NEC">
+                                                            <rect key="frame" x="2" y="40" width="50" height="18"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                            <color key="textColor" name="Gray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monthly Subscription" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Bl-Hn-z7d">
+                                                    <rect key="frame" x="76" y="55" width="137" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" name="Gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTH-FU-tRE">
+                                                    <rect key="frame" x="398" y="28" width="8" height="8"/>
+                                                    <color key="backgroundColor" name="GreenColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="8" id="ohK-VF-p5n"/>
+                                                        <constraint firstAttribute="width" constant="8" id="qCO-Cl-9D1"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                            <integer key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Bl-Hn-z7d" firstAttribute="top" secondItem="okk-Ad-XwS" secondAttribute="bottom" constant="5" id="EG5-kx-EjT"/>
+                                                <constraint firstItem="xTH-FU-tRE" firstAttribute="top" secondItem="VSX-kf-0wD" secondAttribute="top" id="Fda-YN-641"/>
+                                                <constraint firstItem="yV7-1c-c60" firstAttribute="centerY" secondItem="pdx-QK-ojo" secondAttribute="centerY" id="Rye-iY-jjZ"/>
+                                                <constraint firstItem="yV7-1c-c60" firstAttribute="leading" secondItem="pdx-QK-ojo" secondAttribute="leading" constant="16" id="Yvj-9b-L9o"/>
+                                                <constraint firstItem="xTH-FU-tRE" firstAttribute="leading" secondItem="VSX-kf-0wD" secondAttribute="trailing" constant="4" id="fdA-zC-siW"/>
+                                                <constraint firstItem="VSX-kf-0wD" firstAttribute="top" secondItem="yV7-1c-c60" secondAttribute="top" id="iHJ-1d-jj6"/>
+                                                <constraint firstItem="okk-Ad-XwS" firstAttribute="top" secondItem="yV7-1c-c60" secondAttribute="top" id="o3J-Bk-85d"/>
+                                                <constraint firstItem="4Bl-Hn-z7d" firstAttribute="leading" secondItem="yV7-1c-c60" secondAttribute="trailing" constant="16" id="vf1-1T-OZU"/>
+                                                <constraint firstItem="okk-Ad-XwS" firstAttribute="leading" secondItem="yV7-1c-c60" secondAttribute="trailing" constant="16" id="wNi-sZ-B4Q"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xTH-FU-tRE" secondAttribute="trailing" constant="-12" id="yAn-IT-MuH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="7Ql-kF-QnA" id="x5D-C2-zqz"/>
+                                    <outlet property="delegate" destination="7Ql-kF-QnA" id="UzY-BD-Qxh"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0cD-y8-KZD" firstAttribute="top" secondItem="Z8l-dt-oHN" secondAttribute="top" id="CTo-UF-aHs"/>
+                            <constraint firstItem="0cD-y8-KZD" firstAttribute="leading" secondItem="Z8l-dt-oHN" secondAttribute="leading" id="JUR-jg-89g"/>
+                            <constraint firstItem="Z8l-dt-oHN" firstAttribute="trailing" secondItem="0cD-y8-KZD" secondAttribute="trailing" id="abE-7n-CIJ"/>
+                            <constraint firstAttribute="bottom" secondItem="0cD-y8-KZD" secondAttribute="bottom" id="oqZ-pP-erx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z8l-dt-oHN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Transactions" id="D3c-He-e4L"/>
+                    <connections>
+                        <outlet property="tableView" destination="0cD-y8-KZD" id="2zL-uW-k5s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zT-3k-fhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.3478260869565" y="-313.39285714285711"/>
+            <point key="canvasLocation" x="1102.8985507246377" y="-313.39285714285711"/>
         </scene>
         <!--Item-->
         <scene sceneID="11q-Zv-C9l">
@@ -28,9 +146,19 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hTm-gS-F2H" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="faB-bP-xG1"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ClI-00-wba">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="ClI-00-wba">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="GreenColor"/>
+                        <color key="barTintColor" name="GreenColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="37"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -42,4 +170,16 @@
             <point key="canvasLocation" x="194.20289855072465" y="-313.39285714285711"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pandora" width="60" height="60"/>
+        <namedColor name="Gray">
+            <color red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GreenColor">
+            <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.14117647058823529" green="0.16862745098039217" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
