@@ -22,19 +22,9 @@ class TransactionsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let cell = UINib(nibName: "TransactionsCell", bundle: Bundle.main)
+        tableView.register(cell, forCellReuseIdentifier: "cell")
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -44,7 +34,7 @@ extension TransactionsViewController: UITableViewDelegate {
 
 extension TransactionsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let count = 0
+        let count = 10
         tableView.backgroundView = count == 0 ? emptyStateView : nil
         tableView.separatorStyle = count == 0 ? .none : .singleLine
         return count

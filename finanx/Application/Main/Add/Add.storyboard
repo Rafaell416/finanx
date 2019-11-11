@@ -22,6 +22,7 @@
                         <viewLayoutGuide key="safeArea" id="BMC-fc-AKV"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add" id="vMh-Z7-QPh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jX2-iu-4bh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +35,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="RuC-uc-6bv"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="5wB-6j-A2i">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="97"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="GreenColor"/>
                         <textAttributes key="titleTextAttributes">

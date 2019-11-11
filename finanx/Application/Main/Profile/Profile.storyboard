@@ -21,7 +21,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SAe-Wl-BLI"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="TabBarProfile" id="jdS-gJ-syj"/>
                     <navigationItem key="navigationItem" title="Profile" id="ALu-9c-CQQ"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UA0-ed-tlK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -34,7 +36,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="6Mb-eo-Ljc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" largeTitles="YES" id="Trx-UA-ZSU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="97"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="GreenColor"/>
                         <textAttributes key="titleTextAttributes">
@@ -57,6 +59,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TabBarProfile" width="20" height="20"/>
         <namedColor name="GreenColor">
             <color red="0.62352941176470589" green="0.74117647058823533" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
