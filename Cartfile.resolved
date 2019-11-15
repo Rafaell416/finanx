@@ -1,0 +1,4 @@
+binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterCore.json" "3.2.0"
+binary "https://ton.twimg.com/syndication/twitterkit/ios/TwitterKit.json" "3.4.2"
+github "airbnb/lottie-ios" "477959517babbeb46e69a6e94ae1c666af559e96"
+github "bizz84/SwiftyStoreKit" "0.15.0"
